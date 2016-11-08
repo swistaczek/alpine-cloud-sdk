@@ -4,7 +4,7 @@
 
 * [`latest`](https://github.com/jamespedwards42/alpine-cloud-sdk/blob/master/Dockerfile) FROM openjdk:7-jre-alpine
 
-## Docker Run
+## Docker Run gcloud
 
 ```sh
 docker run -i -t --rm \
@@ -12,6 +12,17 @@ docker run -i -t --rm \
   -v $PWD:/data \
   -w /data \
   jamespedwards42/alpine-cloud-sdk:latest
+```
+
+## Docker Run gsutil
+
+```sh
+docker run -i -t --rm \
+  -v $HOME/.config/gcloud:/.config/gcloud\
+  -v $PWD:/data \
+  -w /data \
+  --entrypoint=bash\
+  jamespedwards42/alpine-cloud-sdk:latest gsutil help
 ```
 
 ## Shell Alias
