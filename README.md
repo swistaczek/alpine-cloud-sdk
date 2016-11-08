@@ -2,7 +2,7 @@
 
 ## Supported Tags
 
-* [`latest`](https://github.com/jamespedwards42/alpine-cloud-sdk/blob/master/Dockerfile) FROM alpine:edge
+* [`latest`](https://github.com/jamespedwards42/alpine-cloud-sdk/blob/master/Dockerfile) FROM openjdk:7-jre-alpine
 
 ## Docker Run
 
@@ -14,7 +14,7 @@ docker run -i -t --rm \
   jamespedwards42/alpine-cloud-sdk:latest
 ```
 
-### Shell Alias
+## Shell Alias
 
 ```sh
 alias gcloud="docker run -i -t --rm\
