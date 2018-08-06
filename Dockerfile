@@ -1,4 +1,4 @@
-FROM openjdk:7-jre-alpine
+FROM openjdk:alpine
 
 ARG BUILD_DATE
 ARG VCS_REF
